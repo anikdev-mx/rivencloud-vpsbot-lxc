@@ -103,8 +103,6 @@ If that all runs cleanly, you're ready for the bot. If not, jump to
 
 ## 3. Get the bot's files onto the server
 
-Upload `RIVEN_CLOUD_VPS_Bot_4_Files.zip` to your server, then extract the four files:
-
 ```bash
 cd ~
 git clone https://github.com/anikdev-mx/rivencloud-vpsbot-lxc.git rivencloud-vpsbot-lxc
@@ -147,7 +145,7 @@ To grab the IDs the bot needs: enable **Developer Mode** in
 ## 5. Configure the bot
 
 ```bash
-cp env.example.txt .env
+cp .env.example .env
 nano .env
 ```
 
@@ -186,7 +184,7 @@ python3 bot.py
 ```
 
 Seeing `Logged in as RIVEN CLOUD#1234`? You're live — try `+help` in Discord.
-Stop with `Ctrl+C`, then set it up as a permanent systemd service:
+Stop with `Ctrl+C`, then set it up as a 24/7 systemd service:
 
 ```bash
 sudo nano /etc/systemd/system/rivencloud-bot.service
