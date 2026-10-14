@@ -106,9 +106,9 @@ If that all runs cleanly, you're ready for the bot. If not, jump to
 Upload `RIVEN_CLOUD_VPS_Bot_4_Files.zip` to your server, then extract the four files:
 
 ```bash
-sudo mkdir -p /opt/rivencloud-bot
-sudo unzip RIVEN_CLOUD_VPS_Bot_4_Files.zip -d /opt/rivencloud-bot
-cd /opt/rivencloud-bot
+cd ~
+git clone https://github.com/anikdev-mx/rivencloud-vpsbot-lxc.git rivencloud-vpsbot-lxc
+cd rivencloud-vpsbot-lxc
 ```
 
 Use the rebranded `bot.py`, `requirements.txt`, and `env.example.txt`
@@ -164,7 +164,7 @@ Branding (already set, change if you like):
 
 ```ini
 BOT_NAME=RIVEN CLOUD
-PREFIX=+
+PREFIX=!
 BOT_LOGO_URL=https://your-image-host.com/your-logo.png
 ```
 
